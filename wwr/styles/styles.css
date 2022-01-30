@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Electrolize&family=Public+Sans:wght@800&display=swap');
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #F1FAEE   ;
+  --secondary-color: #A8DADC ;
+  --accent1-color: #E63946;
+  --accent2-color: #457B9D;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Electrolize";
+  --paragraph-font: "Be Vietnam Pro";
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+  --headline-color-on-color: #F1FAEE; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #A8DADC; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #F1FAEE; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #396E94;
+  --nav-link-color: "white";
+  --nav-background-color: #A8DADC;
+  --nav-hover-link-color: #F1FAEE;
+  --nav-hover-background-color: #E63946;
+}
+
+#content {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: var(--headline-color-on-white);
+}
+
+.logo {
+    width: 80px;
+}
+
+/*
+.navbar {
+    background-color: var(--nav-background-color);
+}
+*/ 
+
+nav a {
+    background-color: var(--nav-background-color);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: white;
+}
+
+.book, .join {
+    background-color: var(--nav-background-color);
+}
+
+.book:hover, .join:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+#background {
+    background-color: var(--secondary-color);
+}
+
+.hero-img {
+    width: 100%;
+}
+
+#hero-msg {
+    text-align: center;
+}
+
+.msg {
+    background-color: var(--headline-color-on-white);
+    color: var(--primary-color);
+}
+
+.button-box {
+    text-align: center;
+}
+
+.home-grid {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    
+}
+
+footer {
+    background-color: var(--paragraph-color-on-white);
+    color: black;
+    text-decoration: none;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
