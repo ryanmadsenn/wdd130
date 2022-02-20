@@ -10,8 +10,9 @@
   --accent3-color: #E2F3F3;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Rock Salt";
-  --paragraph-font: "Quicksand";
+  --title-font: "Rock Salt", "Arial";
+  --heading-font: "Architects Daughter", "Arial";  
+  --paragraph-font: "Quicksand", Arial;
 }
 
 body {
@@ -56,7 +57,7 @@ nav {
 nav a {
     background-color: rgba(69, 123, 157, 0);
     color: white;
-    font-family: "Quicksand";
+    font-family: var(--paragraph-font);
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
@@ -92,7 +93,7 @@ nav a:hover {
 
 #hero-msg {
     text-align: center;
-    font-family: "Quicksand";
+    font-family: var(--paragraph-font);
     grid-column: 2/3;
     grid-row: 1/2;
     color: white;
@@ -101,7 +102,7 @@ nav a:hover {
 
 .home-title {
     font-size: 2em;
-    font-family: "Rock Salt";
+    font-family: var(--title-font);
     margin-top: 10px;
 }
 
@@ -109,7 +110,7 @@ nav a:hover {
     background-color: var(--accent3-color);
     color: black;
     display: inline-block;
-    font-family: "Quicksand";
+    font-family: var(--paragraph-font);
     text-decoration: none;
     font-size: 18px;
     padding-top: 15px;
@@ -127,7 +128,7 @@ nav a:hover {
 
 .home-grid {
     text-align: center;
-    font-family: "Architects Daughter";
+    font-family: var(--heading-font);
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
 }
@@ -198,14 +199,14 @@ nav a:hover {
 
 .msg p {
     font-size: .8em;
-    font-family: "Quicksand";
+    font-family: var(--paragraph-font);
     padding-bottom: 15px;
 }
 
 footer {
     background-color: var(--secondary-color);
     color: black;
-    font-family: "Quicksand";
+    font-family: var(--paragraph-font);
     text-decoration: none;
     padding-top: 25px;
     padding-bottom: 25px;
