@@ -130,23 +130,26 @@ nav a:hover {
     text-align: center;
     font-family: var(--heading-font);
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .rivers-card {
-    margin: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     grid-column: 2/4;
     grid-row: 2/3;
 }
 
 .camping-card {
-    margin: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     grid-column: 5/7;
     grid-row: 2/3;
 }
 
 .rapids-card {
-    margin: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     grid-column: 8/10;
     grid-row: 2/3;
 }
@@ -177,7 +180,7 @@ nav a:hover {
 }
 
 .mountains {
-    width: 80%;
+    width: 100%;
     grid-column: 2/7;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
@@ -191,7 +194,7 @@ nav a:hover {
     line-height: 1.5em;
     padding: 35px;
     margin: 100px;
-    grid-column: 6/10;
+    grid-column: 5/10;
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #6f7364;
     border-radius: 20px;
