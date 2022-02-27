@@ -148,6 +148,12 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
+
+.photo {
+  width: 400px;
+  margin-bottom: 100px;
+}
+
 .sm-page2 {
   grid-area: page2;
   background-color: #ccc;
