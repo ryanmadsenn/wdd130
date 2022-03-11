@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Rubik&display=swap');
+
+:root {
+    --primary-color: #2B2D42   ;
+    --secondary-color: #EDF2F4 ;
+    --accent1-color: #8D99AE;
+    --accent2-color: #EF233C;
+  
+    --heading-font: "Rubik";
+    --paragraph-font: "Quicksand", "Arial";
+}
+
+nav {
+    background-color: #2B2D42;
+    padding: 25px;
+    border-bottom: solid 2.5px #EF233C;
+    font-family: var(--paragraph-font);
+}
+
+nav a {
+    color: #EDF2F4;
+    padding: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #8D99AE;
+    color: #EDF2F4;
+    border-radius: 5px;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    margin: 50px;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+#home-page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+#headshot {
+    grid-column: 1/3;
+    margin: 25px;
+    margin-bottom: 75px;
+}
+
+#headshot img{
+    width: 400px;
+    border-radius: 25px;
+    border: solid 2px var(--accent1-color)
+}
+
+#about-me {
+    grid-column: 3/5;
+    margin: 25px;
+}
+
+#about-me h1 {
+    font-family: var(--heading-font);
+}
+
+#about-me h2 {
+    font-family: var(--heading-font);
+}
+
+#about-me h3{
+    font-family: var(--heading-font);
+}
+
+#about-me p {
+    font-family: var(--paragraph-font);
+}
+
+#mom-family-pic {
+    grid-column: 1/3;
+    align-items: center;
+    margin: 25px;
+}
+
+#mom-family-pic img {
+    width: 100%;
+    border-radius: 25px;
+    border: solid 2px var(--accent1-color)
+}
+
+#dad-family-pic {
+    grid-column: 3/5;
+    grid-row: 2/4;
+    align-items: center;
+    margin: 25px;
+}
+
+#dad-family-pic img {
+    width: 100%;
+    border-radius: 25px;
+    border: solid 2px var(--accent1-color);
+}
+
+#skiing-pic {
+    grid-column: 1/3;
+    margin: 25px;
+}
+
+#skiing-pic img {
+    width: 100%;
+    border-radius: 25px;
+    border: solid 2px var(--accent1-color)
+}
+
+
+
+
+
+#hygiene-assistant {
+    margin-bottom: 75px;
+}
+
+#eagle-project img {
+    width: 300px;
+}
+
+.social img {
+    width: 50px;
+}
+
+footer {
+    background-color: var(--accent1-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--heading-font);
+    border-bottom: solid 2.5px var(--accent2-color);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
