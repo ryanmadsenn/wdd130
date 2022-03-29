@@ -402,6 +402,25 @@ div {
 
 .social img {
     width: 50px;
+    margin: 0;
+}
+
+#facebook-logo {
+    width: 56px;
+    margin-right: -3px;
+    margin-bottom: -3px;
+}
+
+#facebook-logo:hover {
+    opacity: .6;
+}
+
+#instagram-logo:hover {
+    opacity: .6;
+}
+
+#linkedin-logo:hover {
+    opacity: .6;
 }
 
 footer {
