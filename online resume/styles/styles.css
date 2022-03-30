@@ -101,11 +101,11 @@ div {
 #about-me {
     grid-column: 3/5;
     margin: 25px;
-    animation: slide-in-from-right 4s;
-    -webkit-animation: slide-in-from-right 4s;
-    -moz-animation: slide-in-from-right 4s;
-    -o-animation: slide-in-from-right 4s;
-    -ms-animation: slide-in-from-right 4s;
+    animation: title-appear 4s;
+    -webkit-animation: title-appear 4s;
+    -moz-animation: title-appear 4s;
+    -o-animation: title-appear 4s;
+    -ms-animation: title-appear 4s;
     animation-timing-function: ease-in-out;
 }
 
@@ -379,11 +379,11 @@ div {
 #experience-title {
     grid-column: 2/3;
     color: var(--primary-color);
-    animation: title-appear 6s;
-    -webkit-animation: title-appear 6s;
-    -moz-animation: title-appear 6s;
-    -o-animation: title-appear 6s;
-    -ms-animation: title-appear 6s;
+    animation: title-appear 5s;
+    -webkit-animation: title-appear 5s;
+    -moz-animation: title-appear 5s;
+    -o-animation: title-appear 5s;
+    -ms-animation: title-appear 5s;
 }
 
 @keyframes title-appear {
