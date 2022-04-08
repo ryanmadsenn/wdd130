@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link id="computer-stylesheet" rel="stylesheet" media="screen and (min-width: 900px)" href="styles/styles.css">
+    <link id="mobile-stylesheet" rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="styles/script.js"></script>
 </head>
-<body>
+<body onload="checkWidth()" onresize="checkWidth()">
     <header>
         <nav>
+            <a id="icon" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
             <div id="nav-buttons">
                 <a href="index.html">Home</a>
                 <a href="experience.html">Experience</a>
