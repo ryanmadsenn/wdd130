@@ -9,8 +9,36 @@
     <link id="mobile-stylesheet" rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="styles/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('YdSrPLf14YWczMtjf');
+    
+        console.log("EmailJS initialized.")
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            console.log("Check width passed.")
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                console.log("Sending email...")
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_8malg6e', 'message_template', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+            checkWidth();
+        }
+    </script>
 </head>
-<body onload="checkWidth()" onresize="checkWidth()">
+<body onresize="checkWidth()">
     <header>
         <nav>
             <a id="icon" href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -44,22 +72,25 @@
         </div>  
         <h1 id="invitation">Send me a message!</h1>
         <div id="feedback"></div>
-            <form action="/my-handling-form-page" method="post">
+            <form id="contact-form">
                 <ul>
                     <li>
-                        <label for="name">Name:</label>
+                        <input type="hidden" name="contact_number">
+                    </li>
+                    <li>
+                        <label>Name:</label>
                         <input type="text" name="user_name" id="name" placeholder="John Smith">
                     </li>
                     <li>
-                        <label for="mail">E-Mail:</label>
-                        <input type="email" name="user_email" id="mail" placeholder="john.smith@gmail.com">
+                        <label>E-Mail:</label>
+                        <input type="email" name="user_email" placeholder="johnsmith@gmail.com">
                     </li>
                     <li>
-                        <label for="msg">Message:</label>
-                        <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
+                        <label>Message:</label>
+                        <textarea name="message" cols="30" rows="10"></textarea>
                     </li>
-                    <li class="button">
-                        <button type="submit">Send</button>
+                    <li>
+                        <input class="button" type="submit" value="Send">
                     </li>
                 </ul>
             </form>
@@ -79,22 +110,29 @@
             </a>
         </div>
     </footer>
-    <script>
-        // get the feedback div element so we can do something with it.
-        const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
-            e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
-        });
+    <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("YdSrPLf14YWczMtjf");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('message-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_8malg6e', 'message_template', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script> -->
 </body>
 </html>

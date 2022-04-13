@@ -474,18 +474,18 @@ height: 5em;
 }
 
 .button {
-/* Align buttons with the text fields */
-margin-left: 100px;
-}
-
-button {
-/* This extra margin represent roughly the same space as the space
-    between the labels and their text fields */
-border-radius: 5px;
-cursor: pointer;
-width: 6em;
-font-size: medium;
-font-family: var(--paragraph-font);
+    margin-left: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 6em;
+    font-size: medium;
+    font-family: var(--heading-font);
+    background-color: var(--accent1-color);
+    color: white;
+    }
+    
+.button:hover {
+    border: solid 1px white;
 }
 
 #feedback {

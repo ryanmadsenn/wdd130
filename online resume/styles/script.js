@@ -1,6 +1,6 @@
 function myFunction() {
+    console.log("Menu function triggered.")
     var x = document.getElementById("nav-buttons");
-    var menu_icon = document.getElementById("icon");
 
     if (x.style.display === "block") {
     x.style.display = "none";
@@ -11,7 +11,7 @@ function myFunction() {
 
 
 function checkWidth() {
-    console.log("yeet");
+    console.log("Checkwidth Triggered");
 
     var x = document.getElementById("nav-buttons");
     var window_width = window.innerWidth;
