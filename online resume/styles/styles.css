@@ -609,7 +609,6 @@ footer a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-top: 50px;
-    padding: 25px;
 }
 
 #contact-info {
