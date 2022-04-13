@@ -88,6 +88,7 @@ nav a#icon:hover {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    color: var(--primary-color);
     /* padding: 25px;
     align-items: center;
     justify-items: center;
@@ -107,8 +108,8 @@ nav a#icon:hover {
 #headshot img{
     width: 400px;
     border-radius: 25px;
-    border: solid 2px var(--accent1-color);
-    box-shadow: 5px 5px 10px #6f7364
+    border: solid 1px var(--accent1-color);
+    box-shadow: 1px 3px 6px #333;
 }
 
 #about-me {
@@ -199,6 +200,7 @@ nav a#icon:hover {
     color: white;
     padding: 20px;
     border-radius: 25px;
+    box-shadow: 0px 3px 5px #333;
     animation: slide-in-from-right 4s;
     -webkit-animation: slide-in-from-right 4s;
     -moz-animation: slide-in-from-right 4s;
@@ -212,6 +214,7 @@ nav a#icon:hover {
     color: white;
     padding: 20px;
     border-radius: 25px;
+    box-shadow: 0px 3px 5px #333;
     animation: slide-in-from-left 4s;
     -webkit-animation: slide-in-from-left 4s;
     -moz-animation: slide-in-from-left 4s;
@@ -229,6 +232,7 @@ nav a#icon:hover {
     padding: 20px;
     border-radius: 25px;
     margin-bottom: 25px;
+    box-shadow: 0px 3px 5px #333;
 }
 
 #eagle-project {
@@ -241,6 +245,7 @@ nav a#icon:hover {
     border-radius: 25px;
     padding: 20px;
     padding-bottom: 40px;
+    box-shadow: 0px 3px 5px #333;
 }
 
 #eagle-project img {
@@ -303,11 +308,11 @@ nav a#icon:hover {
 
 #skills-title {
     grid-column: 2/4;
-    animation: title-appear 10s;
-    -webkit-animation: title-appear 10s;
-    -moz-animation: title-appear 10s;
-    -o-animation: title-appear 10s;
-    -ms-animation: title-appear 10s;
+    animation: title-appear 8s;
+    -webkit-animation: title-appear 8s;
+    -moz-animation: title-appear 8s;
+    -o-animation: title-appear 8s;
+    -ms-animation: title-appear 8s;
 }
 
 .skill-title {
@@ -329,6 +334,7 @@ nav a#icon:hover {
     -o-animation: slide-in-from-left 6s;
     -ms-animation: slide-in-from-left 6s;
     animation-timing-function: ease-in-out;
+    box-shadow: 0px 3px 5px #333;
 }
 
 #python {
@@ -361,6 +367,7 @@ nav a#icon:hover {
     -o-animation: slide-in-from-right 6s;
     -ms-animation: slide-in-from-right 6s;
     animation-timing-function: ease-in-out;
+    box-shadow: 0px 3px 5px #333;
 }
 
 #css {
@@ -373,6 +380,7 @@ nav a#icon:hover {
     -o-animation: slide-in-from-left 5s;
     -ms-animation: slide-in-from-left 5s;
     animation-timing-function: ease-in-out;
+    box-shadow: 0px 3px 5px #333;
 }
 
 #spanish {
@@ -413,6 +421,7 @@ form {
     grid-column: 3/4;
     background-color: var(--primary-color);
     color: white;
+    box-shadow: 0px 3px 5px #333;
 }
 
 ul {
